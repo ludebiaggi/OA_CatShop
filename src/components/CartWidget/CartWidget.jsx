@@ -2,11 +2,12 @@ import cart from "./assets/cart.svg"
 
 const CartWidget = () =>{
     return (
-        <div>
+        <div style={{ display: "flex", alignItems: "center", justifyContent: "flex-end" }}>
             <img src={cart} alt="cart-widget"/>
-            0
+            <p>0</p>
         </div>
     )
 }
+
 
 export default CartWidget
