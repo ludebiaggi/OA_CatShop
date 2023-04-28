@@ -1,5 +1,7 @@
+
 .App {
   text-align: center;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .App-logo {
@@ -112,4 +114,80 @@
 
 .Controls .Button:last-child {
   margin-left: 10px;
+}
+
+
+/*Estilos cards*/
+.CardItem {
+  display: inline-flex;
+  flex-direction: column;
+  width: 270px;
+  height: 550px;
+  margin: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.CardItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  background-color: #ffd4b4;
+}
+
+.Header {
+  background-color: #ffad7a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px 10px 0px 0px;
+  font-size: 16px;
+}
+
+.CardItem .Header .ItemHeader {
+  font-size: small;
+}
+
+
+.ItemImage {
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+
+.Info {
+  padding: 10px;
+  margin: 0px;
+  font-size: 16px;
+}
+
+.ItemFooter {
+  background-color: #ffad7a;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.Option {
+  background-color: #ff704d;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.Option:hover {
+  background-color: #ffad7a;
+  transform: scale(1.1);
+}
+
+#cardTitle {
+  font-size: large;
 }
