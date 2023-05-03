@@ -131,6 +131,19 @@
   transition: all 0.3s ease-in-out;
 }
 
+.CardItemDetail{
+  display: inline-flex;
+  flex-direction: column;
+  width: 270px;
+  height: 750px;
+  margin: 20px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
 .CardItem:hover {
   transform: translateY(-5px);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);

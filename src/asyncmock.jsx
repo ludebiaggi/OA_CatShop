@@ -53,5 +53,14 @@ export const getProducts = () => {
     })   
 }
 
+export const getProductById = (productId) =>{
+    return new Promise((resolve) =>{
+        setTimeout(()=> {
+            resolve(products.find(prod=> prod.id === productId))
+        }, 500)
+    })
+}
+
 //Se genera el archivo asyncmock con un array que nuclea la información de los productos "Alimentos y Snacks"
 //Se exporta una función llamada getProducts que se resuelve luego de 500ms antes de retornar el array
+//Se exporta una función llamada getProductId para encontrar un producto determinado
