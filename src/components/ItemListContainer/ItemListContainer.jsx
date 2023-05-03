@@ -1,28 +1,31 @@
 import { useState, useEffect} from "react"
-import { getProducts } from "../../asyncmock"
+import { getProducts, getProductsByCategory } from "../../asyncmock"
 import ItemList from "../ItemList/ItemList"
+
+import { useParams } from 'react-router-dom'
 
 
 const ItemListContainer = ({greeting}) => {
 
     const [products, setProducts] = useState ([]) 
 
+    const { categoryId } = useParams()
+
     useEffect(() => {
-        getProducts() 
-        .then(response => {setProducts (response)
-        })
-        .catch (error =>{
-            console.error(error)
+        const asyncFunc = categoryId ? () => getProductsByCategory(categoryId) : getProducts
+
+        asyncFunc().then((response) => {
+          setProducts(response)
         })
 
-    }, [])
+    }, [categoryId])
 
     return( 
         <div>
             <h1 className="greeting">{greeting}</h1>
             <br />
             <h5>Un sitio inspirado en Odin y Arya mis dos michis amados y malcriados!</h5>
-            <img src="img/InspoOA.jpg" alt="" />
+            <img src="img/InspoOA.jpg" alt="Foto de los michis" />
             <ItemList products={products}/>
         </div>
     )

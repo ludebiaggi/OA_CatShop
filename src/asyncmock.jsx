@@ -6,6 +6,7 @@ const products =[
         img: '../img/alimento1.png',
         stock: 25, 
         description: 'Descripción alimento 1',
+        category: 'alimentos'
     },
     {
         id: '2' , 
@@ -14,6 +15,7 @@ const products =[
         img: '../img/alimento2.png',
         stock: 25, 
         description: 'Descripción alimento 2',
+        category: 'alimentos'
 
     },
     {
@@ -23,6 +25,7 @@ const products =[
         img: '../img/alimento3.png',
         stock: 25, 
         description: 'Descripción alimento 3',
+        category: 'alimentos'
 
     },
     {
@@ -32,6 +35,7 @@ const products =[
         img: '../img/alimento4.png' ,
         stock: 25, 
         description: 'Descripción alimento 4',
+        category: 'alimentos'
 
     },
     {
@@ -41,6 +45,95 @@ const products =[
         img: '../img/alimento5.JPG',
         stock: 25, 
         description: 'Descripción alimento 5',
+        category: 'alimentos'
+
+    },
+
+    {
+        id: '6', 
+        name: 'Juguete Ratita Naranja' , 
+        price: 450 ,
+        img: '../img/toy1.png',
+        stock: 25, 
+        description: 'Ratita confeccionada de hilo sisal color naranja',
+        category: 'juguetes'
+
+    },
+
+    {
+        id: '7', 
+        name: 'Juguete Ratitas Peludas' , 
+        price: 450 ,
+        img: '../img/toy2.png',
+        stock: 25, 
+        description: 'Ratitas peludas con piel sintética',
+        category: 'juguetes'
+
+    },
+
+    {
+        id: '8', 
+        name: 'Juguete interactivo' , 
+        price: 12600 ,
+        img: '../img/toy3.png',
+        stock: 25, 
+        description: 'Juguete interactivo con pelotitas',
+        category: 'juguetes'
+
+    },
+
+    {
+        id: '9', 
+        name: 'Rascador Ambar' , 
+        price: 26750 ,
+        img: '../img/gym2.jpg',
+        stock: 25, 
+        description: 'Rascador multiplataforma con dos cuchas',
+        category: 'gym'
+
+    },
+
+    {
+        id: '10', 
+        name: 'Rascador Gray' , 
+        price: 32450 ,
+        img: '../img/gym5.jpeg',
+        stock: 25, 
+        description: 'Rascador multiplataforma con dos cuchas y hamaca',
+        category: 'gym'
+
+    },
+
+    {
+        id: '11', 
+        name: 'Rascador KING' , 
+        price: 45760,
+        img: '../img/gym5.jpg',
+        stock: 25, 
+        description: 'Rascador multipataforma tamaño XXL',
+        category: 'gym'
+
+    },
+
+    {
+        id: '12', 
+        name: 'Piedritas Aglomerantes Catlitter' , 
+        price: 370,
+        img: '../img/higiene1.png',
+        stock: 25, 
+        description: 'Piedritas sanitarias tradicionales 3kg',
+        category: 'higiene'
+
+    },
+
+    {
+        id: '13', 
+        name: 'Piedritas Sanitarias ALTA GAMA' , 
+        price: 45760,
+        img: '../img/higiene2.png',
+        stock: 25, 
+        description: 'Granulado higiénico para gatos tradicional 3kg',
+        category: 'higiene'
 
     },
 ]
@@ -61,6 +154,17 @@ export const getProductById = (productId) =>{
     })
 }
 
+export const getProductsByCategory = (category) => {
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        resolve(products.filter((prod) => prod.category === category))
+      }, 500)
+    })
+  }
+  
+
+  
 //Se genera el archivo asyncmock con un array que nuclea la información de los productos "Alimentos y Snacks"
 //Se exporta una función llamada getProducts que se resuelve luego de 500ms antes de retornar el array
-//Se exporta una función llamada getProductId para encontrar un producto determinado
+//Se exporta una función llamada getProductId para encontrar un producto determinado x ID
+//Se exporta una función llamada getProductId para encontrar un producto determinado x Categoria
