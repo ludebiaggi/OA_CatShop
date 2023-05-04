@@ -29,3 +29,4 @@ const ItemDetailContainer = () => {
 
 export default ItemDetailContainer
 
+//En éste componente se obtienen los detalles de un producto por su ID utilizando una función asíncrona y el hook useParams, actualizando su estado mediante useState y useEffect, para luego mostrar los detalles del producto utilizando invocando al componente ItemDetail.

@@ -5,7 +5,7 @@ const products =[
         price: 7000 ,
         img: '../img/alimento1.png',
         stock: 25, 
-        description: 'Descripción alimento 1',
+        description: 'Alimento natural para gatos de todo tipo',
         category: 'alimentos'
     },
     {
@@ -14,7 +14,7 @@ const products =[
         price: 11000 ,
         img: '../img/alimento2.png',
         stock: 25, 
-        description: 'Descripción alimento 2',
+        description: 'Alimento para mantenimiento de peso saludable',
         category: 'alimentos'
 
     },
@@ -24,7 +24,7 @@ const products =[
         price: 5600 ,
         img: '../img/alimento3.png',
         stock: 25, 
-        description: 'Descripción alimento 3',
+        description: 'Alimento para cachorros de 0 a 6 meses',
         category: 'alimentos'
 
     },
@@ -34,7 +34,7 @@ const products =[
         price: 8500 ,
         img: '../img/alimento4.png' ,
         stock: 25, 
-        description: 'Descripción alimento 4',
+        description: 'Alimento medicinal para cuidados renales',
         category: 'alimentos'
 
     },
@@ -44,7 +44,7 @@ const products =[
         price: 7500 ,
         img: '../img/alimento5.JPG',
         stock: 25, 
-        description: 'Descripción alimento 5',
+        description: 'Snack de crema varios sabores: atún, salmón, pavo',
         category: 'alimentos'
 
     },
@@ -117,7 +117,7 @@ const products =[
 
     {
         id: '12', 
-        name: 'Piedritas Aglomerantes Catlitter' , 
+        name: 'Catlitter aglomerante' , 
         price: 370,
         img: '../img/higiene1.png',
         stock: 25, 
@@ -128,7 +128,7 @@ const products =[
 
     {
         id: '13', 
-        name: 'Piedritas Sanitarias ALTA GAMA' , 
+        name: 'Piedritas ALTA GAMA' , 
         price: 45760,
         img: '../img/higiene2.png',
         stock: 25, 
@@ -164,7 +164,7 @@ export const getProductsByCategory = (category) => {
   
 
   
-//Se genera el archivo asyncmock con un array que nuclea la información de los productos "Alimentos y Snacks"
-//Se exporta una función llamada getProducts que se resuelve luego de 500ms antes de retornar el array
-//Se exporta una función llamada getProductId para encontrar un producto determinado x ID
-//Se exporta una función llamada getProductId para encontrar un producto determinado x Categoria
+//Se genera el archivo asyncmock con un array que nuclea la información de los productos y sus categorías
+//Se define y exporta una función llamada getProducts que se resuelve luego de 500ms antes de retornar el array
+//Se define exporta una función llamada getProductId para encontrar un producto determinado x ID
+//Se define exporta una función llamada getProductCategory para encontrar un producto determinado x Categoria

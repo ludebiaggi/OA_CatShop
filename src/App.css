@@ -169,8 +169,8 @@
 .CardItem {
   display: inline-flex;
   flex-direction: column;
-  width: 270px;
-  height: 550px;
+  width: 300px;
+  height: 534px;
   margin: 20px;
   background-color: whitesmoke;
   border-radius: 10px;
@@ -182,8 +182,8 @@
 .CardItemDetail{
   display: inline-flex;
   flex-direction: column;
-  width: 270px;
-  height: 750px;
+  width: 400px;
+  height: 740px;
   margin: 20px;
   background-color: whitesmoke;
   border-radius: 10px;
@@ -218,7 +218,7 @@
 }
 
 .CardItemDetail .Header .ItemHeader {
-  font-size: large;
+  font-size: x-large;
 }
 
 .ItemImage {

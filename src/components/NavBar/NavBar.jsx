@@ -24,3 +24,7 @@ const NavBar = () => {
 }
 
 export default NavBar
+
+//Componente barra de navegación
+//Utilización de bootstrap
+//Utilización de Navink para navegar entre categorías a distintas rutas
