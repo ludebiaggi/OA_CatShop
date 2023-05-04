@@ -2,6 +2,7 @@
 .App {
   text-align: center;
   font-family: 'Varela Round', sans-serif;
+  background-color: rgb(243, 185, 185);
 }
 
 .App-logo {
@@ -30,6 +31,11 @@
   color: #61dafb;
 }
 
+#greetingHome {
+  font-size: small;
+  margin-bottom: 2rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -38,6 +44,31 @@
     transform: rotate(360deg);
   }
 }
+
+/*Estilos de la section del Home*/
+#SectionHome{
+  display: flex;
+  width: auto;
+  height: 500px;
+}
+
+#SectionHome img{
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .5s ease;
+}
+
+#SectionHome img:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
+
+
 
 /*Estilos del componente ITEMCOUNT*/
 .Counter {
@@ -83,6 +114,7 @@
   font-weight: bold;
   text-align: center;
   margin: 0 10px;
+  color: #282c34;
 }
 
 .ButtonAdd {
@@ -150,6 +182,12 @@
   background-color: #ffd4b4;
 }
 
+.CardItemDetail:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
+  background-color: #ffd4b4;
+}
+
 .Header {
   background-color: #ffad7a;
   color: white;
@@ -163,6 +201,9 @@
   font-size: small;
 }
 
+.CardItemDetail .Header .ItemHeader {
+  font-size: large;
+}
 
 .ItemImage {
   width: auto;
