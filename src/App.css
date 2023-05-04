@@ -2,7 +2,7 @@
 .App {
   text-align: center;
   font-family: 'Varela Round', sans-serif;
-  background-color: rgb(243, 185, 185);
+  background-color: #FFF3F8;
 }
 
 .App-logo {
@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #FFF3F8;
 }
 
 .App-link {
@@ -67,6 +67,22 @@
   filter: contrast(120%);
 }
 
+/*Estilos NAVBAR*/
+.NavLinkStyle {
+  text-decoration: none;
+  padding: 0;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  border: none;
+  color: #000;
+  transition: all 0.2s ease-in-out;
+}
+
+.NavLinkStyle:hover {
+  font-weight: bold;
+  transform: scale(1.1); 
+  color: #f8558b;
+}
 
 
 
@@ -79,7 +95,7 @@
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #FFF3F8;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -96,7 +112,7 @@
   align-items: center;
   width: 30px;
   height: 30px;
-  background-color: #ffe3c6;
+  background-color: #BC808E;
   border-radius: 50%;
   border: none;
   font-size: 18px;
@@ -105,7 +121,7 @@
 }
 
 .Button:hover {
-  background-color: #ffa974;
+  background-color: #BC808E;
 }
 
 .Number {
@@ -121,18 +137,18 @@
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #ffe3c6;
+  background-color: #BC808E;
   border: none;
   border-radius: 10px;
   font-size: 16px;
-  font-weight: bold;
-  color: #333;
+  color: #fff;  
   cursor: pointer;
 }
 
 .ButtonAdd:hover {
-  background-color: #ffa974;
-  color: #fff;
+  background-color: #BC808E;
+  font-weight: bold;  
+  color: #333;
 }
 
 .ButtonAdd:disabled {
@@ -156,7 +172,7 @@
   width: 270px;
   height: 550px;
   margin: 20px;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -169,7 +185,7 @@
   width: 270px;
   height: 750px;
   margin: 20px;
-  background-color: #f5f5f5;
+  background-color: whitesmoke;
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
@@ -179,17 +195,17 @@
 .CardItem:hover {
   transform: translateY(-5px);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
-  background-color: #ffd4b4;
+  background-color: rgb(221, 221, 221);
 }
 
 .CardItemDetail:hover {
   transform: translateY(-5px);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.3);
-  background-color: #ffd4b4;
+  background-color: rgb(221, 221, 221);
 }
 
 .Header {
-  background-color: #ffad7a;
+  background-color:#BC808E;
   color: white;
   padding: 10px;
   text-align: center;
@@ -220,7 +236,7 @@
 }
 
 .ItemFooter {
-  background-color: #ffad7a;
+  background-color: #BC808E;
   color: white;
   padding: 10px;
   text-align: center;
@@ -228,18 +244,20 @@
 }
 
 .Option {
-  background-color: #ff704d;
+  background-color: #f8558b;
   color: white;
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .Option:hover {
-  background-color: #ffad7a;
+  font-weight: bold;
   transform: scale(1.1);
+  color: #282c34;
 }
 
 #cardTitle {
