@@ -1,42 +1,57 @@
 import { createContext, useState } from "react";
 
-export const CartContext = createContext ({ 
-    cart: []
-})
+export const CartContext = createContext({
+  cart: [],
+  addItem: () => {},
+  removeItem: () => {},
+  clearCart: () => {}
+});
 
 export const CartProvider = ({ children }) => {
-    const [cart, setCart] = useState ([])
+  const [cart, setCart] = useState([]);
 
-    console.log(cart)
-
-    const addItem = (item, quantity) =>{
-        if(!isInCart(item.id)) {
-            setCart(prev => [...prev, {...item, quantity}])
-        } else {
-            console.error('El producto ya fue agregado')
-        }
+  const addItem = (item, quantity) => {
+    if (!isInCart(item.id)) {
+      setCart(prevCart => [
+        ...prevCart,
+        { ...item, quantity: parseInt(quantity) }
+      ]);
+    } else {
+      console.error('El producto ya está agregado');
     }
+  };
 
-    const removeItem = (itemId) => {
-        const cartUpdated = cart.filter(prod => prod.id !== itemId)
-        setCart(cartUpdated)
-    }
+  const removeItem = (itemId) => {
+    const updatedCart = cart.filter(item => item.id !== itemId);
+    setCart(updatedCart);
+  };
 
-    const clearCart = () =>{
-        setCart([])
-    }
+  const clearCart = () => {
+    setCart([]);
+  };
 
-    const isInCart = (itemId) => {
-        return cart.some(prod => prod.id === itemId)
-    }
+  const isInCart = (itemId) => {
+    return cart.some(item => item.id === itemId);
+  };
 
-    return (
-        <CartContext.Provider value={{cart, addItem, removeItem, clearCart}}>
-            {children}
-        </CartContext.Provider>
-    )
+  const totalQuantity = cart.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
 
-}
+  const total = cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
+
+  return (
+    <CartContext.Provider
+      value={{ cart, addItem, removeItem, clearCart, totalQuantity, total }}
+    >
+      {children}
+    </CartContext.Provider>
+  );
+};
 
 
 
