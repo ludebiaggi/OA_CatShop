@@ -1,9 +1,13 @@
 import '../../App.css'
 import React from 'react';
 
-const CartItem = ({ id, name, quantity, price, total }) => {
+const CartItem = ({ img, id, name, quantity, price, total }) => {
   return (
     <div className="CartItem">
+      <div className="CartItem-info">
+        <p className="CartItem-title"></p>
+        <img src={img} alt={name} className="CartItem-value" /> 
+      </div>
       <div className="CartItem-info">
         <p className="CartItem-title">Código de producto:</p>
         <p className="CartItem-value">{id}</p>
