@@ -21,6 +21,7 @@ const Checkout = () => {
                 },
                 items: cart,
                 total: total,
+                status: "Generada",
                 date: Timestamp.fromDate(new Date())
             }
 

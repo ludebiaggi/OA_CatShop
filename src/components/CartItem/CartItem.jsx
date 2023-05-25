@@ -1,14 +1,11 @@
 import '../../App.css'
 import React from 'react';
 
-const CartItem = ({ img, id, name, quantity, price, total }) => {
+const CartItem = ({ id, name, quantity, price }) => {
+
 
   return (
     <div className="CartItem">
-      <div className="CartItem-info">
-        <p className="CartItem-title"></p>
-        <img src={img} alt={name} className="CartItem-value" /> 
-      </div>
       <div className="CartItem-info">
         <p className="CartItem-title">Código de producto:</p>
         <p className="CartItem-value">{id}</p>
@@ -22,7 +19,7 @@ const CartItem = ({ img, id, name, quantity, price, total }) => {
         <p className="CartItem-value">{quantity}</p>
       </div>
       <div className="CartItem-info">
-        <p className="CartItem-title">Precio:</p>
+        <p className="CartItem-title">Precio Unitario:</p>
         <p className="CartItem-value">${price}</p>
       </div>
     </div>
