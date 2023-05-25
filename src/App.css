@@ -366,3 +366,53 @@
 .Cart-buttons > * {
   margin-left: 10px;
 }
+
+
+/* Estilos del componente CheckoutForm */
+.Container {
+  display: flex;
+  justify-content: center;
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.Label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.Input {
+  width: 250px;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #666;
+}
+
+.ButtonCheckOut {
+  padding: 10px 20px;
+  background-color: #f8558b;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.ButtonCheckOut:hover {
+  background-color: #bc808e;
+}
