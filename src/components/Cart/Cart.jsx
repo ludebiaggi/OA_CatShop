@@ -10,7 +10,7 @@ const Cart = () => {
     if(totalQuantity === 0) {
         return(
             <div>
-                <h1>No tenés productos agregados al carrito</h1>
+                <h3>No tenés productos agregados al carrito</h3>
                 <Link to='/' className='Option'>Productos</Link>
             </div>
         )
@@ -18,10 +18,11 @@ const Cart = () => {
 
     return (
         <div>
+            <h3>Resumen de tu compra</h3>
             {cart.map(p =>  <CartItem key={p.id}{...p}/>)}
-            <h3>Total: ${total}</h3>
+            <h4>Total: ${total}</h4>
             <button onClick={() => clearCart()} className='Option'>Limpiar Carrito</button>
-            <Link to='/checkout' className='Option'>CheckOut</Link>
+            <Link to='/checkout' className='Option'>Ir a pagar</Link>
         </div>
     )
 }

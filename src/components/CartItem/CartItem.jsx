@@ -2,6 +2,7 @@ import '../../App.css'
 import React from 'react';
 
 const CartItem = ({ img, id, name, quantity, price, total }) => {
+
   return (
     <div className="CartItem">
       <div className="CartItem-info">
