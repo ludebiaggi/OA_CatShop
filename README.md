@@ -9,7 +9,7 @@ Creé mi proyecto inspirada en el amor que siento por los felinos. OA CatShop, e
 ## INTEGRACIONES
 El producto utiliza código en HTML, CSS para el estilo y fundamentalmente Javascript con el sugar sintax propio de ReactJs.Se utilizó BOOTSTRAP para el desarrollo del Navbar, e integraciones con FireBase/Firestone para las interacciones de datos en la Database. 
 
-### CARACTERÍSTICAS
+## CARACTERÍSTICAS
 
 - Visualización de catálogo completo en el Home.
 - Búsqueda de productos por categoría.
