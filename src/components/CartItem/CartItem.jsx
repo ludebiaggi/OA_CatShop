@@ -1,7 +1,7 @@
 import '../../App.css'
 import React from 'react';
 
-const CartItem = ({ id, name, quantity, price }) => {
+const CartItem = ({ id, name, quantity, price, handleRemoveItem}) => {
 
 
   return (
@@ -21,6 +21,9 @@ const CartItem = ({ id, name, quantity, price }) => {
       <div className="CartItem-info">
         <p className="CartItem-title">Precio Unitario:</p>
         <p className="CartItem-value">${price}</p>
+      </div>
+      <div>
+      <button onClick={() => handleRemoveItem(id)}>Quitar Item</button>
       </div>
     </div>
   );

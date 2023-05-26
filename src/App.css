@@ -312,6 +312,27 @@
 }
 
 /* Estilos del componente Cart */
+.CartWidget {
+  position: relative;
+}
+
+.TotalQuantity {
+  position: absolute;
+  bottom: 24px;
+  right: 14px;
+  background-color: #f8558b;
+  color: #fff;
+  font-weight: bold;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .Cart {
   margin-top: 20px;
 }

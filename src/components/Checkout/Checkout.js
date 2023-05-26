@@ -11,13 +11,13 @@ const Checkout = () => {
 
     const { cart, total, clearCart } = useContext(CartContext)
 
-    const createOrder = async ({ name, phone, email, confirmEmail }) => {
+    const createOrder = async ({ name, surname, phone, email, confirmEmail }) => {
         setLoading(true)
 
         try {
             const objOrder = {
                 buyer: {
-                    name, phone, email, confirmEmail
+                    name, surname, phone, email, confirmEmail
                 },
                 items: cart,
                 total: total,
@@ -45,7 +45,7 @@ const Checkout = () => {
     }
 
     if (orderId) {
-        return <h1>El ID de tu orden es: {orderId} </h1>
+        return <h2>El ID de tu orden es: {orderId} </h2>
     }
 
     return (
@@ -57,3 +57,6 @@ const Checkout = () => {
 }
 
 export default Checkout
+
+
+//Se genera el componente Checkout que mustra el formulario de compra, se utiliza Firebase/Firestore para crear una nueva orden con la información del comprador y los elementos del carrito que previamente el cliente seleccionó para luego mostrar el ID de la orden una vez generada.

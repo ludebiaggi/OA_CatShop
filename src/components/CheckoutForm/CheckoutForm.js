@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 const CheckoutForm = ({ onConfirm }) => {
     const [name, setName] = useState('')
+    const [surname, setSurname] = useState('')
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
     const [confirmEmail, setConfirmEmail] = useState('')
@@ -11,7 +12,7 @@ const CheckoutForm = ({ onConfirm }) => {
         event.preventDefault()
 
         const userData = {
-            name, phone, email, confirmEmail
+            name, surname, phone, email, confirmEmail
         }
 
         onConfirm(userData)
@@ -27,6 +28,15 @@ const CheckoutForm = ({ onConfirm }) => {
                         type='text'
                         value={name}
                         onChange={({ target }) => setName(target.value)}
+                    />
+                </label>
+                <label className='Label'>
+                    Apellido
+                    <input
+                        className='Input'
+                        type='text'
+                        value={surname}
+                        onChange={({ target }) => setSurname(target.value)}
                     />
                 </label>
                 <label className='Label'>
@@ -68,3 +78,6 @@ const CheckoutForm = ({ onConfirm }) => {
 }
 
 export default CheckoutForm
+
+
+//Se genera el componente Formulario de Checkout que le permitirá al usuario ingresar sus datos y generar una orden de compra (que se almacenará en Firebase con su respectivo OrderID)
