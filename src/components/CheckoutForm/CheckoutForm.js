@@ -1,5 +1,5 @@
 import '../../App.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const CheckoutForm = ({ onConfirm }) => {
     const [name, setName] = useState('')
@@ -7,6 +7,12 @@ const CheckoutForm = ({ onConfirm }) => {
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
     const [confirmEmail, setConfirmEmail] = useState('')
+    const [isFormValid, setIsFormValid] = useState(false)
+
+    useEffect(() => {
+        const isValid = name !== '' && surname !== '' && phone !== '' && email !== '' && email === confirmEmail
+        setIsFormValid(isValid)
+    }, [name, surname, phone, email, confirmEmail])
 
     const handleConfirm = (event) => {
         event.preventDefault()
@@ -67,8 +73,7 @@ const CheckoutForm = ({ onConfirm }) => {
                     />
                 </label>
                 <div className='Label'>
-                    <button type='submit' className='ButtonCheckOut'>Crear orden</button>
-
+                    <button type='submit' className={`ButtonCheckOut ${isFormValid ? 'Active' : ''}`} disabled={!isFormValid}>Realizar compra</button>
                 </div>
 
             </form>
