@@ -29,7 +29,7 @@ const ItemDetail =({id, name, img, category, description, price, stock}) => {
             <picture>
             <img src={img} alt={name} className='ItemImg' />
             </picture>
-            <section>
+            <section className="itemDetailSection">
                 <p className='Info'>Categoría: {category}</p>
                 <p className='Info'>Descripción: {description}</p>
                 <p className='Info'>Precio: ${price}</p>
@@ -42,6 +42,7 @@ const ItemDetail =({id, name, img, category, description, price, stock}) => {
                         <ItemCount initial={0} stock={stock} onAdd={handleOnAdd}/>
                     )
                 }
+                <Link to="/" className="Option">Seguir comprando</Link>
             </footer>
         </article>
 

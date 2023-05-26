@@ -1,7 +1,28 @@
-## GIF SEGUNDA ENTREGA
+## GIF ENTREGA FINAL LOURDES DEBIAGGI
 
-Dejo la preview de la segunda entrega del proyecto
-![GIF](/public/gif/PreEntrega2-LourdesDebiaggi.gif)
+Dejo un GIF con la spreview de la ENTREGA FINAL del curso REACT JS
+![GIF](/public/gif/EntregaFinal-LourdesDebiaggi.gif)
+
+# OA CAT SHOP - IDEA DE PROYECTO
+Creé mi proyecto inspirada en el amor que siento por los felinos. OA CatShop, es como un petshop, pero exclusivo para gatos. Allí los clientes podrán encontrar una variedad de productos para michis, desde alimentos, accesorios, juguetes, rascadores y gyms, hasta productos de higiene. Ésta tienda en línea, proporciona una interfaz intuitiva para buscar y explorar productos, agregarlos al carrito de compras y realizar pedidos.
+
+## INTEGRACIONES
+El producto utiliza código en HTML, CSS para el estilo y fundamentalmente Javascript con el sugar sintax propio de ReactJs.Se utilizó BOOTSTRAP para el desarrollo del Navbar, e integraciones con FireBase/Firestone para las interacciones de datos en la Database. 
+
+### CARACTERÍSTICAS
+
+- Visualización de catálogo completo en el Home.
+- Búsqueda de productos por categoría.
+- Visualización detallada de los ítems con sus respectivas descripciones.
+- Agregar productos al carrito de compras.
+- Eliminar productos del carrito de compras de forma individual.
+- Limpiar carrito de compras.
+- Consultar resumen de compra previo al checkout.
+- Proceso de checkOut con formulario de datos a completar por el cliente.
+- Generación de orden de compra.
+
+#### CRÉDITOS
+-[Lourdes Debiaggi] (https://github.com/ludebiaggi/OA_CatShop) - Desarrolladora y creadora del sitio
 
 
 # Getting Started with Create React App
