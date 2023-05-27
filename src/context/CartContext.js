@@ -53,6 +53,4 @@ export const CartProvider = ({ children }) => {
   );
 };
 
-
-
 //Se crea el contexto y la función que contien la lógica del comportamiento del carrito (Agregar item, quitarlo, limpiarlo)
