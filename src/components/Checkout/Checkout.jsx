@@ -45,7 +45,7 @@ const Checkout = () => {
     }
 
     if (orderId) {
-        return <h2>El ID de tu orden es: {orderId} </h2>
+        return <h2>¡MUCHAS GRACIAS POR TU COMPRA! El ID de tu orden es: {orderId} </h2>
     }
 
     return (
